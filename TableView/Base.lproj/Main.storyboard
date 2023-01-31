@@ -45,16 +45,23 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="datailLabel" destination="jbm-YM-vZM" id="TBq-HU-yUe"/>
+                                            <outlet property="detailLabel" destination="jbm-YM-vZM" id="TBq-HU-yUe"/>
                                             <outlet property="titleLabel" destination="rEe-dH-Rg3" id="F7H-gA-wMY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4nx-r8-oFA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2a7-HF-gfo"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="ULc-En-68P" id="gQi-vp-9Tt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
